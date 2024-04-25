@@ -1,4 +1,8 @@
 import Image from "next/image";
+
+import { Input } from "@nextui-org/react";
+import { Search } from "react-feather";
+
 import mealHome1 from "../../public/images/mealHome1.jpg";
 import mealHome2 from "../../public/images/mealHome2.jpg";
 import mealHome3 from "../../public/images/mealHome3.jpg";
@@ -6,15 +10,12 @@ import mealHome4 from "../../public/images/mealHome4.jpg";
 import mealHome5 from "../../public/images/mealHome5.jpg";
 import mealHome6 from "../../public/images/mealHome6.jpg";
 import mealHome7 from "../../public/images/mealHome7.jpg";
-import { Input } from "@nextui-org/react";
-import { Search } from "react-feather";
 
 export default function Home() {
-
   return (
     <main>
       <div className="relative overflow-hidden bg-white">
-        <div className="pt-16 pb-20 sm:pt-24 lg:pt-40">
+        <div className="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-20 lg:pt-40">
           <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
             <div className="sm:max-w-lg">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">

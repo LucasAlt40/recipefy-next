@@ -1,13 +1,30 @@
+"use client";
+
 import { Button } from "@nextui-org/react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { User } from "react-feather";
 
+function classNames(...classes: Array<string>) {
+  return classes.filter(Boolean).join(" ");
+}
+
 const HeaderComponent = () => {
+  const router = usePathname();
+
   const navOptions = [
-    { label: "Home", path: "/" },
-    { label: "Menu", path: "/menu" },
-    { label: "About Us", path: "/aboutUs" },
-    { label: "Contact", path: "/contact" },
+    { label: "Home", path: "/", current: router == "/" },
+    { label: "Menu", path: "/menu", current: router == "/menu" },
+    {
+      label: "About Us",
+      path: "/aboutUs",
+      current: router == "/aboutUs",
+    },
+    {
+      label: "Contact",
+      path: "/contact",
+      current: router == "/contact",
+    },
   ];
 
   return (
@@ -23,7 +40,13 @@ const HeaderComponent = () => {
             {navOptions.map((opt, key) => (
               <Link
                 href={opt.path}
-                className="text-black hover:bg-red-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                className={classNames(
+                  opt.current
+                    ? "bg-red-600 text-white"
+                    : "text-black hover:bg-red-700 hover:text-white",
+                  "rounded-md px-3 py-2 text-sm font-medium"
+                )}
+                aria-current={opt.current ? "page" : undefined}
                 key={key}
               >
                 {opt.label}
