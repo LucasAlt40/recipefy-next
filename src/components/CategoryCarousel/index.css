@@ -1,0 +1,7 @@
+.slider-dot {
+  transition: all ease-in-out .2s;
+}
+
+.slider-dot:hover {
+  background-color: gray;
+}
