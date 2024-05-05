@@ -15,6 +15,7 @@ const CategoryCarousel = () => {
     slidesToShow: 3,
     slidesToScroll: 3,
     arrows: false,
+    dots: true,
   };
 
   const categories = [
