@@ -3,13 +3,13 @@ import Image from "next/image";
 import { Input } from "@nextui-org/react";
 import { Search } from "react-feather";
 
-import mealHome1 from "../../public/images/mealHome1.jpg";
-import mealHome2 from "../../public/images/mealHome2.jpg";
-import mealHome3 from "../../public/images/mealHome3.jpg";
-import mealHome4 from "../../public/images/mealHome4.jpg";
-import mealHome5 from "../../public/images/mealHome5.jpg";
-import mealHome6 from "../../public/images/mealHome6.jpg";
-import mealHome7 from "../../public/images/mealHome7.jpg";
+import mealHome1 from "../../public/images/mealHome1.png";
+import mealHome2 from "../../public/images/mealHome2.png";
+import mealHome3 from "../../public/images/mealHome3.png";
+import mealHome4 from "../../public/images/mealHome4.png";
+import mealHome5 from "../../public/images/mealHome5.png";
+import mealHome6 from "../../public/images/mealHome6.png";
+import mealHome7 from "../../public/images/mealHome7.png";
 
 export default function Home() {
   return (

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import "./index.css";
-import background from "@/../public/images/mealHome6.jpg";
+import background from "@/../public/images/mealHome6.png";
 
 interface Props {
   label: string;
